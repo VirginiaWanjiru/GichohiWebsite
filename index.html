@@ -6,36 +6,37 @@
 <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+
+<body >
     <section class="header">
         
         <nav>
-            <a href="index.html"><img src="images/logo.png" ></a>
+            <!-- <a href="index.html"><img src="images/logo.png" style="width: 80px; height:60px "  ></a> -->
             <div class="nav-links" id="navLinks">  
                 <i class="fa fa-close" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    
-                    <li><a href="services.html">SERVICES</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#industry">INDUSTRY</a></li>
+                    <li><a href="#contactus">CONTACT US</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
         
-        <div class="text-box">
+        <div class="text-box" id="home">
             <h1>H.W Gichohi & Company</h1>
             <h1>Certified Public Accountants</h1>
-            <h2>"Excellence,Integrity,Growth:Partnering for Success"</h2>
-            <a href="contact.html" class="hero-btn">Visit Us to Know More</a>
+            <h3>"Excellence,Integrity,Growth:Partnering for Success"</h3>
+            <a href="#contactus" class="hero-btn">Visit Us to Know More</a>
         </div>
     </section>
     
 <!---------- course ----------->
     
-    <section class="course">
-        <h1>Services We Offer</h1>
+    <section class="course" id="services">
+        <h1>Services</h1>
        
         <div class="row">
            
@@ -79,8 +80,8 @@
     </section>
     
 <!---------- campus ---------->
-    
-    <section class="campus">
+     
+    <section class="campus" id="about">
         <h1>About us</h1>
         <p>At H. W. Gichohi & Company CPA (K), we pride ourselves on our unwavering commitment to excellence and professionalism. With over 43 years of experience, we have established ourselves as a leading accountancy, audit, and consulting firm in Kenya. Our competencies are deeply rooted in our expertise, technical know-how, continual training, and dedication to delivering exceptional service.</p>
             <div class="row">
@@ -108,7 +109,7 @@
     
 <!---------- Facilities ---------->
     
-    <section class="facility">
+    <section class="facility" id="Industry">
         <h1>INDUSTRY</h1>
        
             <div class="row">
@@ -169,7 +170,7 @@
     
 <!------ Call To Action ------>
 
-<section class="cta">
+<section class="cta"id="contactus">
     
        <h1>Request our services <br>Anywhere From The World</h1>
       
