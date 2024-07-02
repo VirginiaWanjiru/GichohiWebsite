@@ -1,6 +1,6 @@
 
 import { Inter } from "next/font/google";
-import './styles.css';
+// import './styles.css';
 import Navbar from "../components/NavBar";
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout() {
   return (
     <>
-    <Navbar/>
+    <Navbar activeItem="Home"/>
     
     </>
    
