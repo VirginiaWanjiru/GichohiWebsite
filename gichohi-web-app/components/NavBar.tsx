@@ -4,7 +4,7 @@ import logo from '../../images/logo.png';
 export default function NavBar({ activeItem }: { activeItem: string }) {
     const navItems = [
         { name: 'Home', path: '/' },
-        { name: 'About', path: '/about' },
+        { name: 'About', path: '/team' },
         { name: 'Services', path: '/services' },
         { name: 'Industry', path: '/industry' },
         { name: 'Contact Us', path: '/contact' }
