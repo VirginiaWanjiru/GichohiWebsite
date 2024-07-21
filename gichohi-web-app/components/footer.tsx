@@ -1,13 +1,13 @@
 import logo from "../public/images/logo.png";
 import Image from "next/image";
-import Logo from "@/components/icons/Logo";
+import LogoLarge from "@/components/icons/LogoLarge";
 
 export default function Footer() {
   return (
     <footer className="bg-[#C00000] text-[#FAFAFA] pl-3 pt-8 pb-16">
       <div className="grid grid-cols-1 md:grid-cols-3">
         <div>
-          <Logo/>
+          <LogoLarge/>
 
           <div className="mt-3">
             <p>Excellence, Integrity, Growth: Partnering for Success</p>

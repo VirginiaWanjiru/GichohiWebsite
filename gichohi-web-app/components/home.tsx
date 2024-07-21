@@ -20,7 +20,7 @@ export default function Home() {
               <span className="flex flex-col w-full h-full mx-12 my-8 gap-8 md:max-w-4xl md:gap-16 text-[#FFFFFF]">
                   <h1 className="text-5xl md:text-7xl">Delivering Results in Compliance</h1>
                   <p>Excellence, Integrity, Growth: Partnering for Success</p>
-                  <button className="bg-[#C00000] py-4 font-extrabold uppercase md:w-3/4 max-w-[40rem] rounded-3xl md:text-2xl">
+                  <button onClick={()=>router.push('/#contact-us')} className="bg-[#C00000] py-4 font-extrabold uppercase md:w-3/4 max-w-[40rem] rounded-3xl md:text-2xl">
                       Contact Us
                   </button>
               </span>

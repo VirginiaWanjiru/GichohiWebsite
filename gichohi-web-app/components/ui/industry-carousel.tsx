@@ -59,7 +59,6 @@ export default function IndustryCarousel(){
         setRight(newRight);
         setLeft(prevState => prevState+1)
     }
-    console.log({left, right})
     return (
         <div className="flex flex-col md:flex-row items-center gap-16">
             <ArrowLeft onClick={handleLeft}/>
