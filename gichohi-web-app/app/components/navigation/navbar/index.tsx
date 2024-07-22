@@ -1,17 +1,17 @@
 import React from "react";
-import Link from "next/Link";
-import Logo from"./Logo";
-import Button from "./Button";
+import Link from "next/link";
+import Logo from"@/app/components/navbar/logo";
+import Button from "@/app/components/navbar/button";
 
 const NavBar = () => {
     return(
         <>
 
-        <div className="w-full h-20 bg-emerald-800 sticky top=0">
+        <div className="w-full h-20 bg-white-800 sticky top=0">
         <div className="container mx-auto px-4 h-full">
           <div className="flex justify-between items-center h-full">
             <Logo />
-            <ul className="hidden md:flex gap-x-6 text-white">
+            <ul className="hidden md:flex gap-x-6 text-black">
               <li>
                 <Link href="/about">
                   <p>About Us</p>
@@ -36,9 +36,6 @@ const NavBar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;
 
-        </div>
-        </>
-    )
-}
+        
