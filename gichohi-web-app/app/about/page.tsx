@@ -1,5 +1,4 @@
-import Navbar from "../../components/NavBar";
-import Banner from "../../../images/team.jpg";
+import Banner from "@/public/images/team.jpg";
 import Image from "next/image";
 import {
     Card,
@@ -10,13 +9,10 @@ import {
     CardTitle,
   } from "@/components/ui/card"
 
-import Amos from "../../../images/Amos.jpeg";
-import Isaac from "../../../images/Isaac.jpeg";
-import Karanja from "../../../images/Karanja.jpeg";
-import Gichohi from "../../../images/Gichohi.jpeg";
-
-import Footer from "../../components/Footer";
-
+import Amos from "@/public/images/Amos.jpeg";
+import Isaac from "@/public/images/Isaac.jpeg";
+import Karanja from "@/public/images/Karanja.jpeg";
+import Gichohi from "@/public/images/Gichohi.jpeg";
 const teamMembers = [
     { 
         id:1,
@@ -51,7 +47,6 @@ const teamMembers = [
 export default function Team() {
   return (
     <>
-      <Navbar activeItem="About" />
       <div style={{ height: "35vh", position: "relative" }}>
         <Image src={Banner} alt="Teamwork" layout="fill" objectFit="cover" />
         <div style={{
@@ -82,7 +77,6 @@ export default function Team() {
                 </Card>
             ))}
         </div>
-        <Footer />
     </>
   );
 }

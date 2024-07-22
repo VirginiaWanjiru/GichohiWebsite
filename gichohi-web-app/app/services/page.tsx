@@ -1,9 +1,8 @@
-import Navbar from "../../components/NavBar";
-import Banner from "../../../images/audit1.webp";
-import Consulting from "../../../images/image 2.png";
-import Accounting from "../../../images/image 3.png";
-import Assurance from "../../../images/image 4.png";
-import Tax from "../../../images/image 5.png";
+import Banner from "@/public/images/audit1.webp";
+import Consulting from "@/public/images/image 2.png";
+import Accounting from "@/public/images/image 3.png";
+import Assurance from "@/public/images/image 4.png";
+import Tax from "@/public/images/image 5.png";
 import Image from "next/image";
 
 import {
@@ -14,8 +13,6 @@ import {
     CardHeader,
     CardTitle,
   } from "@/components/ui/card"
-
-import Footer from "../../components/Footer";
 
 const services = [
     { 
@@ -47,7 +44,6 @@ const services = [
 export default function Services() {
   return (
     <>
-      <Navbar activeItem="Services" />
       <div style={{ height: "60vh", position: "relative" }}>
         <Image src={Banner} alt="Services" layout="fill" objectFit="cover" />
         <div style={{
@@ -56,10 +52,13 @@ export default function Services() {
           left: 0,
           height: '100%',
           width: '100%',
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
           backgroundColor: 'rgba(0, 0, 0, 0.5)' // Adjust the color and opacity as needed
         }}  >
           
-            <h1 className="text-white text-center my-12 text-7xl tracking-wide flex justify-center">WE PROVIDE PROPER AUDIT SOLUTIONS</h1>
+            <h1 className="text-white text-center text-7xl tracking-wide">WE PROVIDE PROPER AUDIT SOLUTIONS</h1>
             
         </div>
       </div>
@@ -79,8 +78,6 @@ export default function Services() {
                 </Card>
             ))}
         </div>
-        <Footer />
     </>
   );
 }
-
