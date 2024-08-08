@@ -23,7 +23,7 @@ export default function Navbar() {
     ];
 
     return (
-        <nav className="px-10 py-5 flex md:gap-[24%] md:justify-stretch justify-between">
+        <nav className="px-20 py-5 flex md:gap-[24%] md:justify-stretch justify-between">
             <Link href={"/"} id="logo" className="flex align-middle">
                 <Logo/>
             </Link>

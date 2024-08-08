@@ -1,5 +1,6 @@
 import Banner from "@/public/images/team.jpg";
 import Image from "next/image";
+import auditImage from "@/public/images/audit.png";
 import {
     Card,
     CardContent,
@@ -47,7 +48,7 @@ const teamMembers = [
 export default function Team() {
   return (
     <>
-      <div style={{ height: "35vh", position: "relative" }}>
+      <div style={{ height: "80vh", position: "relative" }}>
         <Image src={Banner} alt="Teamwork" layout="fill" objectFit="cover" />
         <div style={{
           position: 'absolute',
@@ -58,10 +59,47 @@ export default function Team() {
           backgroundColor: 'rgba(0, 0, 0, 0.5)' // Adjust the color and opacity as needed
         }}>
           
-            <h1 className="text-white text-center my-12 text-7xl tracking-wide">MEET THE TEAM</h1>
+            <h1 className="text-white text-center my-40 text-7xl tracking-wide">MEET THE TEAM</h1>
             
         </div>
       </div>
+
+      <div className="m-9 flex flex-col gap-14" id="about-us">
+                    <h2 className="text-center">About Us</h2>
+                    <div className="flex justify-between gap-8">
+                        <div >
+                            <p>H. W. Gichohi & Company CPA (K) is a leading accountancy firm in Kenya with:</p>
+                            <p><span className="text-[#C00000] font-bold">43+</span> years of experience.</p>
+                            <br/>
+                            <p className="text-[#C00000] font-bold">Why Choose Us:</p>
+                            <ul className="list-disc ml-8">
+                                <li>
+                                    <p>Holistic solutions that address the unique requirements of individuals, businesses, and organizations.</p>
+                                </li>
+                                <li>
+                                    <p>A one-stop solution for comprehensive support across various disciplines.</p>
+                                </li>
+                                <li>
+                                    <p>Dedication to delivering value-added services that drive success and help navigate today's complex business environment</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <Image className="hidden md:block" src={auditImage} alt={"audit"}/>
+                    </div>
+                    <hr />
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 p-6 mt-10">
             {teamMembers.map((member) => (
                 <Card key={member.id} className="w-full p-4 bg-white rounded-lg shadow-lg relative">

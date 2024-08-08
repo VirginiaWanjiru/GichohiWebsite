@@ -44,7 +44,7 @@ const services = [
 export default function Services() {
   return (
     <>
-      <div style={{ height: "60vh", position: "relative" }}>
+      <div style={{ height: "80vh", position: "relative" }}>
         <Image src={Banner} alt="Services" layout="fill" objectFit="cover" />
         <div style={{
           position: 'absolute',
@@ -58,7 +58,7 @@ export default function Services() {
           backgroundColor: 'rgba(0, 0, 0, 0.5)' // Adjust the color and opacity as needed
         }}  >
           
-            <h1 className="text-white text-center text-7xl tracking-wide">WE PROVIDE PROPER AUDIT SOLUTIONS</h1>
+            <h1 className="text-white text-center text-5xl my-40 tracking-wide">WE PROVIDE PROPER AUDIT SOLUTIONS</h1>
             
         </div>
       </div>

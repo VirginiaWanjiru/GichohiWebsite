@@ -1,6 +1,6 @@
 "use client"
 
-import TextField from "@mui/material/TextField";
+import {TextField} from "@mui/material";
 import React, {useState} from "react";
 
 function SubmitButton(){
